@@ -1,72 +1,18 @@
-pods-code-library
-=================
+<p align="center">
+  <img src="./frontier-rectangle-logo.png" alt="Pods Frontier" width="80%" height="80%" />
+</p>
 
-Working towards a Pods code library and improved documentation.
+<h1 align="center">Pods Frontier Documentation and Examples</h1>
+<p align="center">
+This repository is a work in progress to build documentation, tutorials and example templates for Pods Frontier, the advanced front-end system for the [Pods Framework](http://pods.io). To download to Pods Frontier and to read a guide to its use, [please see its main GitHub repository](https://github.com/pods-framework/pods-frontier). If you need support for Pods or Pods Frontier, please use [the support forums on our website](http://pods.io/support).
+</p>
 
-Goals
-=====
+=== Pods Frontier and Pods Template Resources ===
+As this repository is still being populated with content, your best source for guides to using Pods Frontier and Pods Templates can be found at:
+* [The Pods Frontier Readme](https://github.com/pods-framework/pods-frontier/blob/1.0.x/README.md)
+* [Pods Tutorials: Using Pods Templates](http://pods.io/tutorial-series/using-pods-templates/)
 
-* Create an easy to contribute to code library for Pods.io
-* Automatically populate Pods documentation from inline documentation in code.
-* Open source and document the process to help others in the WordPress community do this.
+=== Contributing ===
+If you'd like to contribute to this repository, you can [submit a pull request](https://help.github.com/articles/using-pull-requests). Tutorials should be placed in the "tutorials" folder, while example templates should be placed in the "examples" folder.
 
-Structure
-=========
-
-Each root folder except `/resources` and `/example` is the post type. `/resources` contains images and other resources that are uploaded to the server while `/examples` contains code examples to be used as partials.
-
-Wordpress post files are generated out of .md or .html files, partials are always skipped.
-
-### Partials
-
-`@partial(/path/to/file)` import a file with a full path.
-
-`@partial(./relative/to/current/file)` import a file relative to the current file.
-
-### Pages `/pages`
-Post type: page
-
-### Learn `/learn`
-
-Custom post type: ???
-
-### Tutorials `/tutorials`
-
-Custom post type: tutorial
-
-### Cookbook `/cookbook`
-
-Custom post type: cookbook-recipe
-
-### Examples `/examples`
-
-Custom post type: example
-
-Installing Locally
-=================
-## Before Installing
-Installing locally requires nodejs, Grunt  and npm.
-
-* You can download a packaged installer for nodejs at: http://nodejs.org/download/
-
-* Once nonejs is installed, you can install grunt and npm from the Terminal:
-`$ npm install -g grunt-cli`
-
-For more information see: http://gruntjs.com/getting-started
-
-## Installing
-* Clone this repository:
-
-`$ git clone https://github.com/pods-framework/pods-code-library-generator.git`
-
-* Change into its directory:
-`$ cd pods-code-library-generator`
-
-* Change config.sample.json to config.json
-`$ mv config.sample.json config.json`
-
-* Update npm
-`$ npm update`
-
-* Run Grunt
-`$ grunt`
+If submitting a template example, create a folder in the examples folder and add a file for each template tab--template.html, scripts, js and style.css. If you can, please also add an explanation about the template in a file called details.txt.
