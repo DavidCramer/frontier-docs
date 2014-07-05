@@ -1,0 +1,13 @@
+[if cover_images]
+<div id="book-covers" class="carousel slide">
+    <div class="carousel-inner">
+        [each cover_images]
+                <div class="[once]active [/once]item"><img src="{@cover_images._src}" /></div>
+        [/each]
+    </div><!--.carousel-inner-->
+
+        <!-- Carousel nav -->
+        <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+        <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+</div>
+[/if]
